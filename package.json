@@ -1,0 +1,48 @@
+{
+  "name": "emma-connect",
+  "version": "1.0.0",
+  "description": "## What is this? Emma Connect is my attempt at building a personal assistant that actually understands what you need. It handles your money, tracks your food, manages your schedule, and you can talk to it through WhatsApp.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "start": "vite start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artbrare/emma-connect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artbrare/emma-connect/issues"
+  },
+  "homepage": "https://github.com/artbrare/emma-connect#readme",
+  "dependencies": {
+    "@clerk/tanstack-react-start": "^0.21.3",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@tanstack/react-router": "^1.130.2",
+    "@tanstack/react-start": "^1.130.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.532.0",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tw-animate-css": "^1.3.6",
+    "typescript": "^5.8.3",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
