@@ -8,7 +8,7 @@ export const Route = createFileRoute("/sign-in/$")({
 function Page() {
   return (
     <div className="w-screen h-screen flex justify-center items-center">
-      <SignIn />
+      <SignIn forceRedirectUrl={"/chat"}/>
     </div>
   );
 }

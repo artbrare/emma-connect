@@ -39,75 +39,126 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Emma Connect Brand Colors */
+  --color-emma-blue: var(--emma-blue);
+  --color-emma-cyan: var(--emma-cyan);
+  --color-emma-gradient-start: var(--emma-gradient-start);
+  --color-emma-gradient-end: var(--emma-gradient-end);
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
+  --radius: 0.75rem;
+  
+  /* Emma Connect Brand Palette */
+  --emma-blue: oklch(0.5 0.15 240);        /* Blue-600 equivalent */
+  --emma-cyan: oklch(0.65 0.12 195);       /* Cyan-500 equivalent */
+  --emma-blue-dark: oklch(0.45 0.18 240);  /* Blue-700 equivalent */
+  --emma-cyan-dark: oklch(0.6 0.14 195);   /* Cyan-600 equivalent */
+  --emma-gradient-start: var(--emma-blue);
+  --emma-gradient-end: var(--emma-cyan);
+  
+  /* Base Colors - Elegant Blue-Gray Palette */
+  --background: oklch(0.99 0.005 240);
+  --foreground: oklch(0.15 0.025 240);
+  --card: oklch(0.98 0.008 240);
+  --card-foreground: oklch(0.15 0.025 240);
+  --popover: oklch(0.98 0.008 240);
+  --popover-foreground: oklch(0.15 0.025 240);
+  
+  /* Primary - Emma Blue */
+  --primary: var(--emma-blue);
+  --primary-foreground: oklch(0.98 0.008 240);
+  
+  /* Secondary - Soft Blue-Gray */
+  --secondary: oklch(0.95 0.015 240);
+  --secondary-foreground: oklch(0.25 0.035 240);
+  
+  /* Muted - Subtle Blue-Gray */
+  --muted: oklch(0.96 0.012 240);
+  --muted-foreground: oklch(0.55 0.025 240);
+  
+  /* Accent - Emma Cyan */
+  --accent: var(--emma-cyan);
+  --accent-foreground: oklch(0.98 0.008 240);
+  
+  /* Interactive Elements */
+  --destructive: oklch(0.6 0.22 25);
+  --border: oklch(0.92 0.015 240);
+  --input: oklch(0.94 0.012 240);
+  --ring: var(--emma-blue);
+  
+  /* Charts - Emma Connect Palette */
+  --chart-1: var(--emma-blue);              /* Primary Blue */
+  --chart-2: var(--emma-cyan);              /* Primary Cyan */
+  --chart-3: oklch(0.65 0.18 280);          /* Purple accent */
+  --chart-4: oklch(0.7 0.15 160);           /* Green accent */
+  --chart-5: oklch(0.75 0.2 80);            /* Orange accent */
+  
+  /* Sidebar - Clean Integration */
+  --sidebar: oklch(0.98 0.008 240);
+  --sidebar-foreground: oklch(0.15 0.025 240);
+  --sidebar-primary: var(--emma-blue);
+  --sidebar-primary-foreground: oklch(0.98 0.008 240);
+  --sidebar-accent: oklch(0.94 0.015 240);
+  --sidebar-accent-foreground: oklch(0.25 0.035 240);
+  --sidebar-border: oklch(0.92 0.015 240);
+  --sidebar-ring: var(--emma-blue);
 }
 
 .dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  /* Emma Connect Dark Brand Colors */
+  --emma-blue: oklch(0.6 0.12 240);
+  --emma-cyan: oklch(0.7 0.1 195);
+  --emma-blue-dark: oklch(0.55 0.15 240);
+  --emma-cyan-dark: oklch(0.65 0.12 195);
+  
+  /* Dark Mode - Sophisticated Blue-Gray */
+  --background: oklch(0.08 0.015 240);
+  --foreground: oklch(0.95 0.008 240);
+  --card: oklch(0.12 0.02 240);
+  --card-foreground: oklch(0.95 0.008 240);
+  --popover: oklch(0.12 0.02 240);
+  --popover-foreground: oklch(0.95 0.008 240);
+  
+  /* Primary - Brighter Emma Blue for Dark */
+  --primary: var(--emma-cyan);
+  --primary-foreground: oklch(0.08 0.015 240);
+  
+  /* Secondary - Dark Blue-Gray */
+  --secondary: oklch(0.2 0.025 240);
+  --secondary-foreground: oklch(0.9 0.012 240);
+  
+  /* Muted - Subtle Dark */
+  --muted: oklch(0.18 0.02 240);
+  --muted-foreground: oklch(0.65 0.015 240);
+  
+  /* Accent - Emma Blue for Dark */
+  --accent: var(--emma-blue);
+  --accent-foreground: oklch(0.95 0.008 240);
+  
+  /* Interactive Elements Dark */
+  --destructive: oklch(0.7 0.2 22);
+  --border: oklch(0.25 0.02 240);
+  --input: oklch(0.22 0.025 240);
+  --ring: var(--emma-cyan);
+  
+  /* Charts Dark - Enhanced Emma Palette */
+  --chart-1: var(--emma-cyan);              /* Primary Cyan */
+  --chart-2: var(--emma-blue);              /* Primary Blue */
+  --chart-3: oklch(0.75 0.15 280);          /* Purple accent */
+  --chart-4: oklch(0.8 0.12 160);           /* Green accent */
+  --chart-5: oklch(0.8 0.18 80);            /* Orange accent */
+  
+  /* Sidebar Dark */
+  --sidebar: oklch(0.12 0.02 240);
+  --sidebar-foreground: oklch(0.95 0.008 240);
+  --sidebar-primary: var(--emma-cyan);
+  --sidebar-primary-foreground: oklch(0.08 0.015 240);
+  --sidebar-accent: oklch(0.2 0.025 240);
+  --sidebar-accent-foreground: oklch(0.9 0.012 240);
+  --sidebar-border: oklch(0.25 0.02 240);
+  --sidebar-ring: var(--emma-cyan);
 }
 
 @layer base {
@@ -116,5 +167,50 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Emma Connect Custom Utilities */
+@layer utilities {
+  .emma-gradient {
+    background: linear-gradient(to bottom right, var(--emma-blue), var(--emma-cyan));
+  }
+  
+  .emma-gradient-hover {
+    background: linear-gradient(to bottom right, var(--emma-blue-dark), var(--emma-cyan-dark));
+  }
+  
+  .emma-text-gradient {
+    background: linear-gradient(to right, var(--emma-blue), var(--emma-cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .emma-border-gradient {
+    border-image: linear-gradient(to right, var(--emma-blue), var(--emma-cyan)) 1;
+  }
+  
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark .glass-effect {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .emma-shadow {
+    box-shadow: 
+      0 4px 6px -1px rgb(59 130 246 / 0.1),
+      0 2px 4px -2px rgb(59 130 246 / 0.1);
+  }
+  
+  .emma-shadow-lg {
+    box-shadow: 
+      0 10px 15px -3px rgb(59 130 246 / 0.1),
+      0 4px 6px -4px rgb(59 130 246 / 0.1);
   }
 }

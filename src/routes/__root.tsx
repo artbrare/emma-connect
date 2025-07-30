@@ -7,25 +7,9 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { ClerkProvider } from "@clerk/tanstack-react-start";
-import { createServerFn } from "@tanstack/react-start";
-import { getAuth } from "@clerk/tanstack-react-start/server";
-import { getWebRequest } from "@tanstack/react-start/server";
 import appCss from "@/styles/app.css?url";
 
-const fetchClerkAuth = createServerFn({ method: "GET" }).handler(async () => {
-  const { userId } = await getAuth(getWebRequest()!);
-  return {
-    userId,
-  };
-});
-
 export const Route = createRootRoute({
-  beforeLoad: async () => {
-    const { userId } = await fetchClerkAuth();
-    return {
-      userId,
-    };
-  },
   head: () => ({
     meta: [
       {
